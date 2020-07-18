@@ -66,12 +66,67 @@
     </div>
     <hr>
     
-      
+      <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#pwd：查看工作目录"><span class="toc-text">pwd：查看工作目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ls：查看指定目录的内容"><span class="toc-text">ls：查看指定目录的内容</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#cd：切换工作目录"><span class="toc-text">cd：切换工作目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#目录结构："><span class="toc-text">目录结构：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#文件及文件夹："><span class="toc-text">文件及文件夹：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#查看文件："><span class="toc-text">查看文件：</span></a></li></ol>
     
     <div class="picture-container">
       
     </div>
-    
+    <h5 id="pwd：查看工作目录"><a href="#pwd：查看工作目录" class="headerlink" title="pwd：查看工作目录"></a>pwd：查看工作目录</h5><h5 id="ls：查看指定目录的内容"><a href="#ls：查看指定目录的内容" class="headerlink" title="ls：查看指定目录的内容"></a>ls：查看指定目录的内容</h5><ul>
+<li>-l：列表显示</li>
+<li>-a：显示所有，包括隐藏文件</li>
+<li>-h：人性化的显示</li>
+<li>-d：只显示目录，不查看内容</li>
+</ul>
+<h5 id="cd：切换工作目录"><a href="#cd：切换工作目录" class="headerlink" title="cd：切换工作目录"></a>cd：切换工作目录</h5><ul>
+<li>.：当前目录</li>
+<li>..：上一级目录</li>
+<li>~：用户家目录</li>
+<li>-：上次切过来的目录</li>
+</ul>
+<h5 id="目录结构："><a href="#目录结构：" class="headerlink" title="目录结构："></a>目录结构：</h5><ul>
+<li>linux目录与win完全不同，是从’/‘开始的，只有他没有上一级目录，因此也叫根目录</li>
+<li>详细介绍：</li>
+<li>/bin：大部分的系统命令</li>
+<li>/boot：启动相关目录</li>
+<li>/dev：设备文件目录，linux下一切设备皆文件</li>
+<li>/etc：配置文件目录</li>
+<li>/home：普通用户的家目录，一个用户对应一个文件夹</li>
+<li>/lib：库文件</li>
+<li>/lib64：64位库文件</li>
+<li>/lost+found：系统异常时临时保存数据，用于恢复等操作</li>
+<li>/media：媒体目录</li>
+<li>/mnt：挂载目录，通用挂载点</li>
+<li>/opt：安装系统非必须软件目录</li>
+<li>/proc：虚拟文件系统，会映射硬件信息</li>
+<li>/root：root用户的家目录</li>
+<li>/sbin：超级用户才能执行的命令目录</li>
+<li>/selinux：linux一套安全机制，非常复杂，通常不用</li>
+<li>/srv：存放本机或本机服务器的数据或服务</li>
+<li>/sys：类似于/proc，也是虚拟文件系统，可以映射系统信息</li>
+<li>/tmp：临时文件，可能随时销毁</li>
+<li>/usr：存放用户安装的应用程序</li>
+<li>/var：系统产生的不可自动销毁的文件，如：日志、缓存等</li>
+</ul>
+<h5 id="文件及文件夹："><a href="#文件及文件夹：" class="headerlink" title="文件及文件夹："></a>文件及文件夹：</h5><ul>
+<li>touch：创建普通文件</li>
+<li>rm：删除文件，-f表示强制删除，-r表示递归删除</li>
+<li>cp：拷贝文件，若目标目录写上文件名可以顺便把名字改了，-r可以操作目录</li>
+<li>mv：移动文件，若目标目录写上文件名可以顺便把名字改了</li>
+<li>mkdir：创建文件夹，-p创建中间目录</li>
+<li>rmdir：删除文件夹，只能删除空目录</li>
+</ul>
+<h5 id="查看文件："><a href="#查看文件：" class="headerlink" title="查看文件："></a>查看文件：</h5><ul>
+<li>cat：从上到下查看文件，全部内容</li>
+<li>tac：从下到上查看文件，全部内容</li>
+<li>head：查看开头的指定行内容，默认10行，head -3 1.txt</li>
+<li>tail：查看末尾的指定行内容，默认10行，tail -5 1.txt</li>
+<li>more：逐渐查看文件，回车下翻一行，空格下翻一屏，看到结尾会自动结束，q退出查看</li>
+<li>less：逐渐查看文件，回车下翻一行，空格下翻一屏，看到结尾不会自动结束，可以上下翻</li>
+<li>nl：功能同cat，会多显示行号</li>
+<li>wc：统计文件信息，显示结果：行数 | 单词数 | 字节数</li>
+<li>说明：more/less更多用法是结合管道使用，ls /etc | more</li>
+</ul>
+
 
   </article>
   </script>
